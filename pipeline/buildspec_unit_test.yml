@@ -2,10 +2,9 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      python: 3.8
+      python: latest
   build:
     commands:
-      # trigger the unit tests here
       - echo 'Running unit tests'
       - pip3 install pytest pytest-mock
       - python3 -m pytest tests/unit
